@@ -10,13 +10,14 @@
 			top: 0px;
 			color: white;
 		}
-		h1.titlebar {
+		a.titlebar {
 			margin: 0px;
 			font-size: 20px;
 			position: absolute;
 			left: 20px;
 			top: 20px;
-			cursor: pointer;
+			text-decoration: none;
+			color: white;
 		}
 		@media (min-width:800px) {
 			div.sitenavbar {
@@ -67,9 +68,9 @@
 			}
 		}
 	</style>
-	<h1 class="titlebar">
+	<a class="titlebar" href="#overview">
 		Code Website
-	</h1>
+	</a>
 	<div class="sitenavbar">
 		<a class="navlink" href="#overview">Overview</a>
 		<a class="navlink" href="#lessons">Lessons</a>
