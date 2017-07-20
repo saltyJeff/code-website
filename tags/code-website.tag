@@ -8,18 +8,16 @@
 		router {
 			width: 100%;
 			color: black;
-			position: fixed;
-			top: 70px;
-			left: 0px;
-			padding: 10px;
+			overflow-y: auto;
+			display: block;
 		}
 		code-website-sidemenu {
 			display: none;
 		}
 	</style>
 	<code-website-header></code-website-header>
-	<router>
-		<route path="overview"><p>Overview</p></route>
+	<router ref="router">
+		<route path="overview"><code-website-overview></code-website-overview></route>
 		<route path="lessons"><p>Lessons</p></route>
 		<route path="contact"><p>Contact Us</p></route>
 	</router>
@@ -27,5 +25,14 @@
 	<script>
 		import './code-website-header.tag';
 		import './code-website-sidemenu.tag';
+		import './code-website-overview.tag';
+
+		var self = this;
+		window.onresize = flexPolyfillRouter;
+		function flexPolyfillRouter () {
+			var routerHeight = window.innerHeight - 65;
+			self.refs.router.root.style.height = routerHeight+"px";
+		}
+		self.on('mount', flexPolyfillRouter);
 	</script>
 </code-website>

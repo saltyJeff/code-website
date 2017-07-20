@@ -5,9 +5,7 @@
 			height: 65px;
 			background-color: #3F51B5;
 			display: block;
-			position: fixed;
-			left: 0px;
-			top: 0px;
+			position: relative;
 			color: white;
 		}
 		a.titlebar {
@@ -38,7 +36,7 @@
 				line-height: 25px;
 			}
 			a.navlink:hover {
-				background-color: #3849A2;
+				background-color: #7986CB;
 			}
 			button.hamburger {
 				display: none;

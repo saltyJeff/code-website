@@ -11,10 +11,12 @@
   "license": "UNLICENSED",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "^0.28.4",
     "riot": "^3.6.1",
     "riot-hot-reload": "^1.0.0",
     "riot-route": "^3.1.2",
     "riot-tag-loader": "^1.0.0",
+    "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
   }

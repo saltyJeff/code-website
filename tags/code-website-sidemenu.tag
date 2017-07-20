@@ -20,7 +20,7 @@
 			border: 1px solid white;
 		}
 		a.sidelink:hover {
-			background-color: #00796B;
+			background-color: #4DB6AC;
 		}
 		button.closeButton {
 			color: red;

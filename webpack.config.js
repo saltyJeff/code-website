@@ -17,7 +17,11 @@ module.exports = {
 					  hot: false,
 					  debug: true
         		}
-      		}
+			},
+            {
+				test: /\.css$/,
+				loader: "style-loader!css-loader"
+			}
    		]
 	},
 	devServer: {
