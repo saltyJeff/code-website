@@ -9,4 +9,12 @@ p {
 }
 a {
 	white-space: wrap;
+	text-decoration: none;
+	color: #478DFF;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #4527A5;
 }

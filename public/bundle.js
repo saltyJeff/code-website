@@ -3636,7 +3636,7 @@ route.parser();
 
 
 riot.tag2('code-website',
-  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"><p>Contact Us</p></route> </router> <code-website-sidemenu></code-website-sidemenu>',
+  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="height: 100%; width: 100%;">Loading...</iframe> </route> </router> <code-website-sidemenu></code-website-sidemenu>',
   'code-website,[data-is="code-website"]{ height: 100%; width: 100%; display: block; } code-website router,[data-is="code-website"] router{ width: 100%; color: black; overflow-y: auto; display: block; } code-website-sidemenu { display: none; }',
   '', function(opts) {
 
@@ -3750,7 +3750,7 @@ exports = module.exports = __webpack_require__(13)(undefined);
 
 
 // module
-exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 35px;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20px;\r\n}\r\np {\r\n\tfont-size: 16px;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n}", ""]);
+exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 35px;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20px;\r\n}\r\np {\r\n\tfont-size: 16px;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n\ttext-decoration: none;\r\n\tcolor: #478DFF;\r\n}\r\na:hover {\r\n\ttext-decoration: underline;\r\n}\r\na:visited {\r\n\tcolor: #4527A5;\r\n}", ""]);
 
 // exports
 

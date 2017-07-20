@@ -19,7 +19,15 @@
 	<router ref="router">
 		<route path="overview"><code-website-overview></code-website-overview></route>
 		<route path="lessons"><p>Lessons</p></route>
-		<route path="contact"><p>Contact Us</p></route>
+		<route path="contact">
+			<iframe 
+				src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true"
+				frameborder="0"
+				marginheight="0"
+				marginwidth="0"
+				style="height: 100%; width: 100%;"
+			>Loading...</iframe>
+		</route>
 	</router>
 	<code-website-sidemenu></code-website-sidemenu>
 	<script>
