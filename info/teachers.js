@@ -1,37 +1,8 @@
 module.exports = [
 	{
-		img: './img/jefferson.jpg',
-		name: 'Jefferson Lee',
-		bio: 'Freegan unicorn pork belly cronut viral jianbing shabby chic.'
-		+'Dreamcatcher freegan gastropub brooklyn cardigan retro lumbersexual tbh before they sold out adaptogen woke offal butcher tumblr.'
-		+'Meh narwhal whatever af +1 hella. Plaid man bun semiotics four dollar toast fashion axe schlitz vexillologist beard health goth.'
-	},
-	{
-		img: './img/jefferson.jpg',
-		name: 'Jefferson Lee',
-		bio: 'Freegan unicorn pork belly cronut viral jianbing shabby chic.'
-		+'Dreamcatcher freegan gastropub brooklyn cardigan retro lumbersexual tbh before they sold out adaptogen woke offal butcher tumblr.'
-		+'Meh narwhal whatever af +1 hella. Plaid man bun semiotics four dollar toast fashion axe schlitz vexillologist beard health goth.'
-	},
-	{
-		img: './img/jefferson.jpg',
-		name: 'Jefferson Lee',
-		bio: 'Freegan unicorn pork belly cronut viral jianbing shabby chic.'
-		+'Dreamcatcher freegan gastropub brooklyn cardigan retro lumbersexual tbh before they sold out adaptogen woke offal butcher tumblr.'
-		+'Meh narwhal whatever af +1 hella. Plaid man bun semiotics four dollar toast fashion axe schlitz vexillologist beard health goth.'
-	},
-	{
-		img: './img/jefferson.jpg',
-		name: 'Jefferson Lee',
-		bio: 'Freegan unicorn pork belly cronut viral jianbing shabby chic.'
-		+'Dreamcatcher freegan gastropub brooklyn cardigan retro lumbersexual tbh before they sold out adaptogen woke offal butcher tumblr.'
-		+'Meh narwhal whatever af +1 hella. Plaid man bun semiotics four dollar toast fashion axe schlitz vexillologist beard health goth.'
-	},
-	{
-		img: './img/jefferson.jpg',
-		name: 'Jefferson Lee',
-		bio: 'Freegan unicorn pork belly cronut viral jianbing shabby chic.'
-		+'Dreamcatcher freegan gastropub brooklyn cardigan retro lumbersexual tbh before they sold out adaptogen woke offal butcher tumblr.'
-		+'Meh narwhal whatever af +1 hella. Plaid man bun semiotics four dollar toast fashion axe schlitz vexillologist beard health goth.'
+		img: "./img/jefferson.jpg",
+		name: "Jefferson Lee",
+		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
+		"Use the Contact Us page if you want to talk to me about designing your own site."
 	}
 ]

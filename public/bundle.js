@@ -2959,15 +2959,29 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-const riot = __webpack_require__(0);
-__webpack_require__(2);
-const route = __webpack_require__(3)
-__webpack_require__(6);
-riot.mount('*');
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_riot__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_riot_hot_reload__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_riot_hot_reload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_riot_hot_reload__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_teachers_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_teachers_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__info_teachers_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_riot_route_tag__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_riot_route_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_riot_route_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tags_code_website_tag__ = __webpack_require__(7);
+
+
+
+
+
+
+window.teachers = __WEBPACK_IMPORTED_MODULE_2__info_teachers_js__;
+__WEBPACK_IMPORTED_MODULE_0_riot___default.a.mount('*');
 if(window.location.href.indexOf('#') == -1) {
-	route('overview');
+	__WEBPACK_IMPORTED_MODULE_3_riot_route_tag___default()('overview');
 }
 
 /***/ }),
@@ -3038,6 +3052,19 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = [
+	{
+		img: "./img/jefferson.jpg",
+		name: "Jefferson Lee",
+		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
+		"Use the Contact Us page if you want to talk to me about designing your own site."
+	}
+]
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3045,7 +3072,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var route = _interopDefault(__webpack_require__(4));
+var route = _interopDefault(__webpack_require__(5));
 var riot = _interopDefault(__webpack_require__(0));
 
 riot.tag2('router', '<yield></yield>', '', '', function(opts) {
@@ -3098,12 +3125,12 @@ module.exports = route;
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot_observable__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot_observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_riot_observable__);
 
 
@@ -3455,7 +3482,7 @@ route.parser();
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function(window, undefined) {var observable = function(el) {
@@ -3593,42 +3620,33 @@ route.parser();
 })(typeof window != 'undefined' ? window : undefined);
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__code_website_overview_tag__ = __webpack_require__(10);
 
     var riot = __webpack_require__(0)
     //src: E:/Documents/GitHub/code-website/tags/code-website.tag
 
 
+
 riot.tag2('code-website',
-  '<code-website-header></code-website-header> <router> <route path="overview"><p>Overview</p></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"><p>Contact Us</p></route> </router> <code-website-sidemenu></code-website-sidemenu>',
-  'code-website,[data-is="code-website"]{ height: 100%; width: 100%; display: block; } code-website router,[data-is="code-website"] router{ width: 100%; color: black; position: fixed; top: 70px; left: 0px; padding: 10px; } code-website-sidemenu { display: none; }',
+  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"><p>Contact Us</p></route> </router> <code-website-sidemenu></code-website-sidemenu>',
+  'code-website,[data-is="code-website"]{ height: 100%; width: 100%; display: block; } code-website router,[data-is="code-website"] router{ width: 100%; color: black; overflow-y: auto; display: block; } code-website-sidemenu { display: none; }',
   '', function(opts) {
-});
-    
-  
 
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-    var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-header.tag
-riot.tag2('code-website-header',
-  '<a class="titlebar" href="#overview"> Code Website </a> <div class="sitenavbar"> <a class="navlink" href="#overview">Overview</a> <a class="navlink" href="#lessons">Lessons</a> <a class="navlink" href="#contact">Contact Us</a> </div> <button class="hamburger" onclick="{toggleMenu}"> &#9776; </button>',
-  'code-website-header,[data-is="code-website-header"]{ width: 100%; height: 65px; background-color: #3F51B5; display: block; position: fixed; left: 0px; top: 0px; color: white; } code-website-header a.titlebar,[data-is="code-website-header"] a.titlebar{ margin: 0px; font-size: 20px; position: absolute; left: 20px; top: 20px; text-decoration: none; color: white; } @media (min-width:800px) { code-website-header div.sitenavbar,[data-is="code-website-header"] div.sitenavbar{ display: inline-block; position: absolute; right: 30px; top: 13px; height: 100%; } code-website-header a.navlink,[data-is="code-website-header"] a.navlink{ display: inline-block; margin-left: 30px; color: white; text-decoration: none; height: 30px; padding: 10px 30px 6px 30px; font-size: 15px; line-height: 25px; } code-website-header a.navlink:hover,[data-is="code-website-header"] a.navlink:hover{ background-color: #3849A2; } code-website-header button.hamburger,[data-is="code-website-header"] button.hamburger{ display: none; } code-website-header div.sidemenu,[data-is="code-website-header"] div.sidemenu{ display: none; } } @media (max-width:799px) { code-website-header div.sitenavbar,[data-is="code-website-header"] div.sitenavbar{ display: none; } code-website-header button.hamburger,[data-is="code-website-header"] button.hamburger{ display: inline-block; position: absolute; right: 20px; height: 65px; width: 65px; top: 0px; border: none; background-color: transparent; font-size: 30px; color: white; } code-website-header button.hamburger:active,[data-is="code-website-header"] button.hamburger:active{ background-color: #3849A2; } }',
-  '', function(opts) {
-		this.toggleMenu = function(evt) {
-			document.querySelector('code-website-sidemenu').style.display = "block";
+		var self = this;
+		window.onresize = flexPolyfillRouter;
+		function flexPolyfillRouter () {
+			var routerHeight = window.innerHeight - 65;
+			self.refs.router.root.style.height = routerHeight+"px";
 		}
+		self.on('mount', flexPolyfillRouter);
 });
     
   
@@ -3639,15 +3657,651 @@ riot.tag2('code-website-header',
 
 
     var riot = __webpack_require__(0)
+    //src: E:/Documents/GitHub/code-website/tags/code-website-header.tag
+riot.tag2('code-website-header',
+  '<a class="titlebar" href="#overview"> Code Website </a> <div class="sitenavbar"> <a class="navlink" href="#overview">Overview</a> <a class="navlink" href="#lessons">Lessons</a> <a class="navlink" href="#contact">Contact Us</a> </div> <button class="hamburger" onclick="{toggleMenu}"> &#9776; </button>',
+  'code-website-header,[data-is="code-website-header"]{ width: 100%; height: 65px; background-color: #3F51B5; display: block; position: relative; color: white; } code-website-header a.titlebar,[data-is="code-website-header"] a.titlebar{ margin: 0px; font-size: 20px; position: absolute; left: 20px; top: 20px; text-decoration: none; color: white; } @media (min-width:800px) { code-website-header div.sitenavbar,[data-is="code-website-header"] div.sitenavbar{ display: inline-block; position: absolute; right: 30px; top: 13px; height: 100%; } code-website-header a.navlink,[data-is="code-website-header"] a.navlink{ display: inline-block; margin-left: 30px; color: white; text-decoration: none; height: 30px; padding: 10px 30px 6px 30px; font-size: 15px; line-height: 25px; } code-website-header a.navlink:hover,[data-is="code-website-header"] a.navlink:hover{ background-color: #7986CB; } code-website-header button.hamburger,[data-is="code-website-header"] button.hamburger{ display: none; } code-website-header div.sidemenu,[data-is="code-website-header"] div.sidemenu{ display: none; } } @media (max-width:799px) { code-website-header div.sitenavbar,[data-is="code-website-header"] div.sitenavbar{ display: none; } code-website-header button.hamburger,[data-is="code-website-header"] button.hamburger{ display: inline-block; position: absolute; right: 20px; height: 65px; width: 65px; top: 0px; border: none; background-color: transparent; font-size: 30px; color: white; } code-website-header button.hamburger:active,[data-is="code-website-header"] button.hamburger:active{ background-color: #3849A2; } }',
+  '', function(opts) {
+		this.toggleMenu = function(evt) {
+			document.querySelector('code-website-sidemenu').style.display = "block";
+		}
+});
+    
+  
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var riot = __webpack_require__(0)
     //src: E:/Documents/GitHub/code-website/tags/code-website-sidemenu.tag
 riot.tag2('code-website-sidemenu',
   '<button class="closeButton" onclick="{hideMenu}">&#10006;</button> <a class="sidelink" href="#overview" onclick="{hideMenu}">Overview</a> <a class="sidelink" href="#lessons" onclick="{hideMenu}">Lessons</a> <a class="sidelink" href="#contact" onclick="{hideMenu}">Contact Us</a>',
-  'code-website-sidemenu,[data-is="code-website-sidemenu"]{ height: 100%; width: 250px; background-color: #F5F5F5; display: block; position: fixed; top: 0px; right: 0px; } code-website-sidemenu a.sidelink,[data-is="code-website-sidemenu"] a.sidelink{ display: block; background-color: #009688; padding: 10px; line-height: 30px; font-size: 20px; color: white; text-decoration: none; border: 1px solid white; } code-website-sidemenu a.sidelink:hover,[data-is="code-website-sidemenu"] a.sidelink:hover{ background-color: #00796B; } code-website-sidemenu button.closeButton,[data-is="code-website-sidemenu"] button.closeButton{ color: red; width: 40px; text-align: right; display: block; background-color: transparent; border: none; font-size: 40px; margin-left: auto; margin-right: 30px; }',
+  'code-website-sidemenu,[data-is="code-website-sidemenu"]{ height: 100%; width: 250px; background-color: #F5F5F5; display: block; position: fixed; top: 0px; right: 0px; } code-website-sidemenu a.sidelink,[data-is="code-website-sidemenu"] a.sidelink{ display: block; background-color: #009688; padding: 10px; line-height: 30px; font-size: 20px; color: white; text-decoration: none; border: 1px solid white; } code-website-sidemenu a.sidelink:hover,[data-is="code-website-sidemenu"] a.sidelink:hover{ background-color: #4DB6AC; } code-website-sidemenu button.closeButton,[data-is="code-website-sidemenu"] button.closeButton{ color: red; width: 40px; text-align: right; display: block; background-color: transparent; border: none; font-size: 40px; margin-left: auto; margin-right: 30px; }',
   '', function(opts) {
 		var self= this;
 		self.hideMenu = function (evt) {
 			self.root.style.display = "none";
 		}
+});
+    
+  
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__subpage_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__);
+
+    var riot = __webpack_require__(0)
+    //src: E:/Documents/GitHub/code-website/tags/code-website-overview.tag
+
+
+riot.tag2('code-website-overview',
+  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> LOREM IPSUM is a group that provides programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <code-website-teacher each="{window.teachers}" teacher="{this}"></code-website-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
+  'code-website-overview,[data-is="code-website-overview"]{ display: block; padding: 10px; }',
+  '', function(opts) {
+});
+    
+  
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(12);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(14)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!./subpage.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./subpage.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 35px;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20px;\r\n}\r\np {\r\n\tfont-size: 16px;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(selector) {
+		if (typeof memo[selector] === "undefined") {
+			memo[selector] = fn.call(this, selector);
+		}
+
+		return memo[selector]
+	};
+})(function (target) {
+	return document.querySelector(target)
+});
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(15);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton) options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+	if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else {
+		throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	options.attrs.type = "text/css";
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var riot = __webpack_require__(0)
+    //src: E:/Documents/GitHub/code-website/tags/code-website-teacher.tag
+riot.tag2('code-website-teacher',
+  '<div class="nameAndImg"> <img class="teacherImg" riot-src="{opts.teacher.img}"> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
+  'code-website-teacher,[data-is="code-website-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; border: 1px solid black; } code-website-teacher img.teacherImg,[data-is="code-website-teacher"] img.teacherImg{ background-repeat: no-repeat; background-attachment: fixed; background-position: center; height: 100px; width: auto; margin-left: auto; margin-right: auto; display: block; } code-website-teacher h3.teacherName,[data-is="code-website-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; margin-right: 20px; float: left; } code-website-teacher p.teacherBio,[data-is="code-website-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; margin-left: auto; margin-right: auto; width: 200px; } }',
+  '', function(opts) {
 });
     
   
