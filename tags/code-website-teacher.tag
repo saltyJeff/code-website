@@ -5,16 +5,24 @@
 			display: block;
 			overflow: hidden;
 			padding: 10px;
-			border: 1px solid black;
+			margin-bottom: 10px;
+			box-shadow: 8px 8px rgba(0,0,0,0.6);
+		}
+		div.nameAndImg {
+			display: block;
+			position: relative;
+			width: 150px;
+		}
+		div.mask {
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			overflow: hidden;
+			margin: 0 auto;
 		}
 		img.teacherImg {
-			background-repeat: no-repeat;
-    		background-attachment: fixed;
-    		background-position: center;
-			height: 100px;
-			width: auto;
-			margin-left: auto;
-			margin-right: auto;
+			height: auto;
+			width: 100px;
 			display: block;
 		}
 		h3.teacherName {
@@ -25,7 +33,6 @@
 		}
 		@media (min-width:800px) {
 			div.nameAndImg {
-				display: block;
 				margin-right: 20px;
 				float: left;
 			}
@@ -35,15 +42,15 @@
 		}
 		@media (max-width:799px) {
 			div.nameAndImg {
-				display: block;
 				margin-left: auto;
 				margin-right: auto;
-				width: 200px;
 			}
 		}
 	</style>
 	<div class="nameAndImg">
-		<img class="teacherImg" src={ opts.teacher.img } />
+		<div class="mask">
+			<img class="teacherImg" src={ opts.teacher.img } />
+		</div>
 		<h3 class="teacherName">{opts.teacher.name}</h3>
 	</div>
 	<p class="teacherBio">{opts.teacher.bio}</p>

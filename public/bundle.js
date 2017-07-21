@@ -3061,7 +3061,7 @@ module.exports = [
 		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
 		"Use the Contact Us page if you want to talk to me about designing your own site."
 	}
-]
+];
 
 /***/ }),
 /* 4 */
@@ -3636,7 +3636,7 @@ route.parser();
 
 
 riot.tag2('code-website',
-  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="height: 100%; width: 100%;">Loading...</iframe> </route> </router> <code-website-sidemenu></code-website-sidemenu>',
+  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"> <div style="overflow: hidden; height: 100%; width: 100%;"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;">Loading...</iframe> </div> </route> </router> <code-website-sidemenu></code-website-sidemenu>',
   'code-website,[data-is="code-website"]{ height: 100%; width: 100%; display: block; } code-website router,[data-is="code-website"] router{ width: 100%; color: black; overflow-y: auto; display: block; } code-website-sidemenu { display: none; }',
   '', function(opts) {
 
@@ -3703,7 +3703,7 @@ riot.tag2('code-website-sidemenu',
 
 
 riot.tag2('code-website-overview',
-  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> LOREM IPSUM is a group that provides programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <code-website-teacher each="{window.teachers}" teacher="{this}"></code-website-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
+  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> LOREM IPSUM is a group that provides programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <code-website-teacher each="{teacher, index in window.teachers}" teacher="{teacher}" riot-style="{\'background-color: hsl(\'+((index / window.teachers.length) * 360)+\',46%,87%)\'}"></code-website-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
   'code-website-overview,[data-is="code-website-overview"]{ display: block; padding: 10px; }',
   '', function(opts) {
 });
@@ -4299,8 +4299,8 @@ module.exports = function (css) {
     var riot = __webpack_require__(0)
     //src: E:/Documents/GitHub/code-website/tags/code-website-teacher.tag
 riot.tag2('code-website-teacher',
-  '<div class="nameAndImg"> <img class="teacherImg" riot-src="{opts.teacher.img}"> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
-  'code-website-teacher,[data-is="code-website-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; border: 1px solid black; } code-website-teacher img.teacherImg,[data-is="code-website-teacher"] img.teacherImg{ background-repeat: no-repeat; background-attachment: fixed; background-position: center; height: 100px; width: auto; margin-left: auto; margin-right: auto; display: block; } code-website-teacher h3.teacherName,[data-is="code-website-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; margin-right: 20px; float: left; } code-website-teacher p.teacherBio,[data-is="code-website-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; margin-left: auto; margin-right: auto; width: 200px; } }',
+  '<div class="nameAndImg"> <div class="mask"> <img class="teacherImg" riot-src="{opts.teacher.img}"> </div> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
+  'code-website-teacher,[data-is="code-website-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; position: relative; width: 150px; } code-website-teacher div.mask,[data-is="code-website-teacher"] div.mask{ height: 100px; width: 100px; background-color: red; overflow: hidden; margin: 0 auto; } code-website-teacher img.teacherImg,[data-is="code-website-teacher"] img.teacherImg{ height: auto; width: 100px; display: block; } code-website-teacher h3.teacherName,[data-is="code-website-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ margin-right: 20px; float: left; } code-website-teacher p.teacherBio,[data-is="code-website-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ margin-left: auto; margin-right: auto; } }',
   '', function(opts) {
 });
     

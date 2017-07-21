@@ -15,7 +15,11 @@
 		For a list of lessons, please visit the <a href="#lessons">Lessons page</a> 
 	</p>
 	<h2>Teachers</h2>
-	<code-website-teacher each={ window.teachers } teacher={ this }></code-website-teacher>
+	<code-website-teacher 
+		each={ teacher, index in window.teachers }
+		teacher={ teacher }
+		style={ 'background-color: hsl('+((index / window.teachers.length) * 360)+',46%,87%)' }
+	></code-website-teacher>
 	<p>
 		Interested in joining our team? Visit the <a href="#contact">Contact Us page</a>
 	</p>
