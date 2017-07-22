@@ -18,7 +18,7 @@
 	<code-website-header></code-website-header>
 	<router ref="router">
 		<route path="overview"><code-website-overview></code-website-overview></route>
-		<route path="lessons"><p>Lessons</p></route>
+		<route path="lessons"><code-website-lessons></code-website-lessons></route>
 		<route path="contact">
 			<div style="overflow: hidden; height: 100%; width: 100%;">
 				<iframe 
@@ -36,6 +36,7 @@
 		import './code-website-header.tag';
 		import './code-website-sidemenu.tag';
 		import './code-website-overview.tag';
+		import './code-website-lessons.tag';
 
 		var self = this;
 		window.onresize = flexPolyfillRouter;

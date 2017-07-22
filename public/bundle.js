@@ -2967,21 +2967,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_riot__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_riot_hot_reload__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_riot_hot_reload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_riot_hot_reload__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_teachers_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_teachers_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__info_teachers_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_riot_route_tag__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_riot_route_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_riot_route_tag__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tags_code_website_tag__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_riot_route_tag__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_riot_route_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_riot_route_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__info_teachers_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__info_teachers_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__info_teachers_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_lessons_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_lessons_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__info_lessons_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tags_code_website_tag__ = __webpack_require__(8);
 
 
 
 
 
 
-window.teachers = __WEBPACK_IMPORTED_MODULE_2__info_teachers_js__;
+
+window.teachers = __WEBPACK_IMPORTED_MODULE_3__info_teachers_js__;
+window.lessons = __WEBPACK_IMPORTED_MODULE_4__info_lessons_js__;
 __WEBPACK_IMPORTED_MODULE_0_riot___default.a.mount('*');
 if(window.location.href.indexOf('#') == -1) {
-	__WEBPACK_IMPORTED_MODULE_3_riot_route_tag___default()('overview');
+	__WEBPACK_IMPORTED_MODULE_2_riot_route_tag___default()('overview');
 }
 
 /***/ }),
@@ -3052,19 +3056,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
-
-module.exports = [
-	{
-		img: "./img/jefferson.jpg",
-		name: "Jefferson Lee",
-		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
-		"Use the Contact Us page if you want to talk to me about designing your own site."
-	}
-];
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3072,7 +3063,7 @@ module.exports = [
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var route = _interopDefault(__webpack_require__(5));
+var route = _interopDefault(__webpack_require__(4));
 var riot = _interopDefault(__webpack_require__(0));
 
 riot.tag2('router', '<yield></yield>', '', '', function(opts) {
@@ -3125,12 +3116,12 @@ module.exports = route;
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot_observable__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot_observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_riot_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_riot_observable__);
 
 
@@ -3482,7 +3473,7 @@ route.parser();
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function(window, undefined) {var observable = function(el) {
@@ -3620,23 +3611,78 @@ route.parser();
 })(typeof window != 'undefined' ? window : undefined);
 
 /***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = [
+	{
+		img: "./img/jefferson.jpg",
+		name: "Jefferson Lee",
+		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
+		"Use the Contact Us page if you want to talk to me about designing your own site."
+	}
+];
+
+/***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+module.exports = [
+	{
+		name: 'Beginning HTML',
+		desc: 'A introductory class for 5-6th graders in HyperText Markup Language (HTML).'+
+		'Students were given a crash course in basic text tags, as well as Cascading Style Sheets (CSS)',
+		links: [
+			{
+				text: 'Lesson Powerpoint',
+				desc: 'The lecture powerpoint',
+				href: 'https://docs.google.com/presentation/d/1dxu72ytcyYRWz8luL1lJUbw08Rm1XlK_DZ1yR9yVIfU/edit?usp=sharing'
+			},
+			{
+				text: 'W3Schools',
+				desc: 'A tool for more in-depth HTML tutorials',
+				href: 'https://www.w3schools.com/html/'
+			},
+			{
+				text: 'Thimble',
+				desc: 'A HTML edtior by Mozilla designed for teaching web development',
+				href: 'https://thimble.mozilla.org'
+			}
+		]
+	},
+	{
+		name: 'MIT App Inventor',
+		desc: 'Students were allowed to try out different features of the App Inventor such as text to speech and textboxes',
+		links: [
+			{
+				text: 'MIT App Inventor 2',
+				desc: 'The website of the editor',
+				href: 'http://ai2.appinventor.mit.edu/'
+			}
+		]
+	}
+];
+
+/***/ }),
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__code_website_overview_tag__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__code_website_overview_tag__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__code_website_lessons_tag__ = __webpack_require__(18);
 
     var riot = __webpack_require__(0)
     //src: E:/Documents/GitHub/code-website/tags/code-website.tag
 
 
 
+
 riot.tag2('code-website',
-  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><p>Lessons</p></route> <route path="contact"> <div style="overflow: hidden; height: 100%; width: 100%;"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;">Loading...</iframe> </div> </route> </router> <code-website-sidemenu></code-website-sidemenu>',
+  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><code-website-lessons></code-website-lessons></route> <route path="contact"> <div style="overflow: hidden; height: 100%; width: 100%;"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;">Loading...</iframe> </div> </route> </router> <code-website-sidemenu></code-website-sidemenu>',
   'code-website,[data-is="code-website"]{ height: 100%; width: 100%; display: block; } code-website router,[data-is="code-website"] router{ width: 100%; color: black; overflow-y: auto; display: block; } code-website-sidemenu { display: none; }',
   '', function(opts) {
 
@@ -3652,7 +3698,7 @@ riot.tag2('code-website',
   
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -3670,7 +3716,7 @@ riot.tag2('code-website-header',
   
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -3689,13 +3735,13 @@ riot.tag2('code-website-sidemenu',
   
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__subpage_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__);
 
     var riot = __webpack_require__(0)
@@ -3711,13 +3757,13 @@ riot.tag2('code-website-overview',
   
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -3725,7 +3771,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(14)(content, options);
+var update = __webpack_require__(15)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -3742,10 +3788,10 @@ if(false) {
 }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(13)(undefined);
+exports = module.exports = __webpack_require__(14)(undefined);
 // imports
 
 
@@ -3756,7 +3802,7 @@ exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 35px;\r\n}\r\nh2.sub
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 /*
@@ -3838,7 +3884,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -3884,7 +3930,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(15);
+var	fixUrls = __webpack_require__(16);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -4197,7 +4243,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports) {
 
 
@@ -4292,7 +4338,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -4301,6 +4347,40 @@ module.exports = function (css) {
 riot.tag2('code-website-teacher',
   '<div class="nameAndImg"> <div class="mask"> <img class="teacherImg" riot-src="{opts.teacher.img}"> </div> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
   'code-website-teacher,[data-is="code-website-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; position: relative; width: 150px; } code-website-teacher div.mask,[data-is="code-website-teacher"] div.mask{ height: 100px; width: 100px; background-color: red; overflow: hidden; margin: 0 auto; } code-website-teacher img.teacherImg,[data-is="code-website-teacher"] img.teacherImg{ height: auto; width: 100px; display: block; } code-website-teacher h3.teacherName,[data-is="code-website-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ margin-right: 20px; float: left; } code-website-teacher p.teacherBio,[data-is="code-website-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ margin-left: auto; margin-right: auto; } }',
+  '', function(opts) {
+});
+    
+  
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_lesson_tag__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_lesson_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__code_website_lesson_tag__);
+
+    var riot = __webpack_require__(0)
+    //src: E:/Documents/GitHub/code-website/tags/code-website-lessons.tag
+
+riot.tag2('code-website-lessons',
+  '<h1 class="subpageheader"> Lessons </h1> <p> These are some of the lessons we have taught at the SCCS. We don\'t have a set lesson plan, but adjust the lessons to better fit the kids who are present. </p> <code-website-lesson each="{lesson, index in window.lessons}" lesson="{lesson}" riot-style="{\'background-color: hsl(\'+((index / window.lessons.length) * 360)+\',46%,87%)\'}"> </code-website-lesson>',
+  'code-website-lessons,[data-is="code-website-lessons"]{ display: block; padding: 10px; }',
+  '', function(opts) {
+});
+    
+  
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var riot = __webpack_require__(0)
+    //src: E:/Documents/GitHub/code-website/tags/code-website-lesson.tag
+riot.tag2('code-website-lesson',
+  '<h3 class="lessonName">{opts.lesson.name}</h3> <p>{opts.lesson.desc}</p> <hr> <p>Lesson Materials:</p> <virtual each="{link, index in opts.lesson.links}"> <p><a class="lessonLink" href="{link.href}">{link.text}</a>- {link.desc}</p> </virtual>',
+  'code-website-lesson,[data-is="code-website-lesson"]{ background-color: white; display: block; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } code-website-lesson h3.lessonName,[data-is="code-website-lesson"] h3.lessonName{ font-size: 30px; margin-top: 5px; margin-bottom: 5px; } code-website-lesson a.lessonLink,[data-is="code-website-lesson"] a.lessonLink{ display: inline-block; padding: 5px line-height: 30px; font-size: 20px; text-decoration: none; margin-bottom: 5px; width: auto; } code-website-lesson a.lessonLink:hover,[data-is="code-website-lesson"] a.lessonLink:hover{ text-decoration: underline; }',
   '', function(opts) {
 });
     
