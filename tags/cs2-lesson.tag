@@ -1,4 +1,4 @@
-<code-website-lesson>
+<cs2-lesson>
 	<style>
 		:scope {
 			background-color: white;
@@ -36,4 +36,4 @@
 		>{link.text}</a>-
 		{ link.desc }</p>
 	</virtual>
-</code-website-lesson>
+</cs2-lesson>

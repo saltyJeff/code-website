@@ -1,4 +1,4 @@
-<code-website-teacher>
+<cs2-teacher>
 	<style>
 		:scope {
 			background-color: white;
@@ -16,7 +16,6 @@
 		div.mask {
 			height: 100px;
 			width: 100px;
-			background-color: red;
 			overflow: hidden;
 			margin: 0 auto;
 		}
@@ -49,9 +48,9 @@
 	</style>
 	<div class="nameAndImg">
 		<div class="mask">
-			<img class="teacherImg" src={ opts.teacher.img } />
+			<img class="teacherImg" src={ opts.teacher.img } alt={ 'An picture of '+opts.teacher.name }/>
 		</div>
 		<h3 class="teacherName">{opts.teacher.name}</h3>
 	</div>
 	<p class="teacherBio">{opts.teacher.bio}</p>
-</code-website-teacher>
+</cs2-teacher>

@@ -1,4 +1,4 @@
-<code-website-overview>
+<cs2-overview>
 	<style>
 		:scope {
 			display: block;
@@ -7,19 +7,23 @@
 	</style>
 	<h1 class="subpageheader">Overview</h1>
 	<h2 class="subtitle">
-		LOREM IPSUM is a group that provides programming lessons at the 
+		CS<sup>2</sup> (Chinese School Computer Scientists) is a group that provides volunteer programming lessons at the 
 		<a href="http://www.sccca.org/">South Coast Chinese School</a>
 	</h2>
 	<p>
+		Founded in 2016, our mission is to provide the SCCS students with an entertaining introduction
+		to programming.
+	</p>
+	<p>
 		We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer.
-		For a list of lessons, please visit the <a href="#lessons">Lessons page</a> 
+		For a complete list of lessons, please visit the <a href="#lessons">Lessons page</a> 
 	</p>
 	<h2>Teachers</h2>
-	<code-website-teacher 
+	<cs2-teacher 
 		each={ teacher, index in window.teachers }
 		teacher={ teacher }
 		style={ 'background-color: hsl('+((index / window.teachers.length) * 360)+',46%,87%)' }
-	></code-website-teacher>
+	></cs2-teacher>
 	<p>
 		Interested in joining our team? Visit the <a href="#contact">Contact Us page</a>
 	</p>
@@ -28,6 +32,6 @@
 	</p>
 	<script>
 		import './subpage.css';
-		import './code-website-teacher.tag';
+		import './cs2-teacher.tag';
 	</script>
-</code-website-overview>
+</cs2-overview>

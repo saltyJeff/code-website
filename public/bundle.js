@@ -2973,7 +2973,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__info_teachers_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__info_teachers_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_lessons_js__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_lessons_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__info_lessons_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tags_code_website_tag__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tags_cs2_website_tag__ = __webpack_require__(8);
 
 
 
@@ -3668,22 +3668,22 @@ module.exports = [
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_header_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__code_website_header_tag__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__code_website_sidemenu_tag__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__code_website_overview_tag__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__code_website_lessons_tag__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cs2_header_tag__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cs2_header_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__cs2_header_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cs2_sidemenu_tag__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cs2_sidemenu_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__cs2_sidemenu_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cs2_overview_tag__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cs2_lessons_tag__ = __webpack_require__(18);
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website.tag
+    //src: E:/Documents/GitHub/code-website/tags/cs2-website.tag
 
 
 
 
-riot.tag2('code-website',
-  '<code-website-header></code-website-header> <router ref="router"> <route path="overview"><code-website-overview></code-website-overview></route> <route path="lessons"><code-website-lessons></code-website-lessons></route> <route path="contact"> <div style="overflow: hidden; height: 100%; width: 100%;"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;">Loading...</iframe> </div> </route> </router> <code-website-sidemenu></code-website-sidemenu>',
-  'code-website,[data-is="code-website"]{ height: 100%; width: 100%; display: block; } code-website router,[data-is="code-website"] router{ width: 100%; color: black; overflow-y: auto; display: block; } code-website-sidemenu { display: none; }',
+riot.tag2('cs2-website',
+  '<cs2-header></cs2-header> <router ref="router"> <route path="overview"><cs2-overview></cs2-overview></route> <route path="lessons"><cs2-lessons></cs2-lessons></route> <route path="contact"> <div style="overflow: hidden; height: 100%; width: 100%;"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmMFFZYypoD_aOdt3_foVzIkfrcWQwhDzH59WpmT3NizM_mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;">Loading...</iframe> </div> </route> </router> <cs2-sidemenu></cs2-sidemenu>',
+  'cs2-website,[data-is="cs2-website"]{ height: 100%; width: 100%; display: block; } cs2-website router,[data-is="cs2-website"] router{ width: 100%; color: black; overflow-y: auto; display: block; } cs2-website cs2-sidemenu,[data-is="cs2-website"] cs2-sidemenu{ display: none; }',
   '', function(opts) {
 
 		var self = this;
@@ -3703,13 +3703,13 @@ riot.tag2('code-website',
 
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-header.tag
-riot.tag2('code-website-header',
-  '<a class="titlebar" href="#overview"> Code Website </a> <div class="sitenavbar"> <a class="navlink" href="#overview">Overview</a> <a class="navlink" href="#lessons">Lessons</a> <a class="navlink" href="#contact">Contact Us</a> </div> <button class="hamburger" onclick="{toggleMenu}"> &#9776; </button>',
-  'code-website-header,[data-is="code-website-header"]{ width: 100%; height: 65px; background-color: #3F51B5; display: block; position: relative; color: white; } code-website-header a.titlebar,[data-is="code-website-header"] a.titlebar{ margin: 0px; font-size: 20px; position: absolute; left: 20px; top: 20px; text-decoration: none; color: white; } @media (min-width:800px) { code-website-header div.sitenavbar,[data-is="code-website-header"] div.sitenavbar{ display: inline-block; position: absolute; right: 30px; top: 13px; height: 100%; } code-website-header a.navlink,[data-is="code-website-header"] a.navlink{ display: inline-block; margin-left: 30px; color: white; text-decoration: none; height: 30px; padding: 10px 30px 6px 30px; font-size: 15px; line-height: 25px; } code-website-header a.navlink:hover,[data-is="code-website-header"] a.navlink:hover{ background-color: #7986CB; } code-website-header button.hamburger,[data-is="code-website-header"] button.hamburger{ display: none; } code-website-header div.sidemenu,[data-is="code-website-header"] div.sidemenu{ display: none; } } @media (max-width:799px) { code-website-header div.sitenavbar,[data-is="code-website-header"] div.sitenavbar{ display: none; } code-website-header button.hamburger,[data-is="code-website-header"] button.hamburger{ display: inline-block; position: absolute; right: 20px; height: 65px; width: 65px; top: 0px; border: none; background-color: transparent; font-size: 30px; color: white; } code-website-header button.hamburger:active,[data-is="code-website-header"] button.hamburger:active{ background-color: #3849A2; } }',
+    //src: E:/Documents/GitHub/code-website/tags/cs2-header.tag
+riot.tag2('cs2-header',
+  '<a class="titlebar" href="#overview"> Chinese School CS </a> <div class="sitenavbar"> <a class="navlink" href="#overview">Overview</a> <a class="navlink" href="#lessons">Lessons</a> <a class="navlink" href="#contact">Contact Us</a> </div> <button class="hamburger" onclick="{toggleMenu}"> &#9776; </button>',
+  'cs2-header,[data-is="cs2-header"]{ width: 100%; height: 65px; background-color: #3F51B5; display: block; position: relative; color: white; } cs2-header a.titlebar,[data-is="cs2-header"] a.titlebar{ margin: 0px; font-size: 20px; position: absolute; left: 20px; top: 20px; text-decoration: none; color: white; } @media (min-width:800px) { cs2-header div.sitenavbar,[data-is="cs2-header"] div.sitenavbar{ display: inline-block; position: absolute; right: 30px; top: 13px; height: 100%; } cs2-header a.navlink,[data-is="cs2-header"] a.navlink{ display: inline-block; margin-left: 30px; color: white; text-decoration: none; height: 30px; padding: 10px 30px 6px 30px; font-size: 15px; line-height: 25px; } cs2-header a.navlink:hover,[data-is="cs2-header"] a.navlink:hover{ background-color: #7986CB; } cs2-header button.hamburger,[data-is="cs2-header"] button.hamburger{ display: none; } cs2-header div.sidemenu,[data-is="cs2-header"] div.sidemenu{ display: none; } } @media (max-width:799px) { cs2-header div.sitenavbar,[data-is="cs2-header"] div.sitenavbar{ display: none; } cs2-header button.hamburger,[data-is="cs2-header"] button.hamburger{ display: inline-block; position: absolute; right: 20px; height: 65px; width: 65px; top: 0px; border: none; background-color: transparent; font-size: 30px; color: white; } cs2-header button.hamburger:active,[data-is="cs2-header"] button.hamburger:active{ background-color: #3849A2; } }',
   '', function(opts) {
 		this.toggleMenu = function(evt) {
-			document.querySelector('code-website-sidemenu').style.display = "block";
+			document.querySelector('cs2-sidemenu').style.display = "block";
 		}
 });
     
@@ -3721,10 +3721,10 @@ riot.tag2('code-website-header',
 
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-sidemenu.tag
-riot.tag2('code-website-sidemenu',
+    //src: E:/Documents/GitHub/code-website/tags/cs2-sidemenu.tag
+riot.tag2('cs2-sidemenu',
   '<button class="closeButton" onclick="{hideMenu}">&#10006;</button> <a class="sidelink" href="#overview" onclick="{hideMenu}">Overview</a> <a class="sidelink" href="#lessons" onclick="{hideMenu}">Lessons</a> <a class="sidelink" href="#contact" onclick="{hideMenu}">Contact Us</a>',
-  'code-website-sidemenu,[data-is="code-website-sidemenu"]{ height: 100%; width: 250px; background-color: #F5F5F5; display: block; position: fixed; top: 0px; right: 0px; } code-website-sidemenu a.sidelink,[data-is="code-website-sidemenu"] a.sidelink{ display: block; background-color: #009688; padding: 10px; line-height: 30px; font-size: 20px; color: white; text-decoration: none; border: 1px solid white; } code-website-sidemenu a.sidelink:hover,[data-is="code-website-sidemenu"] a.sidelink:hover{ background-color: #4DB6AC; } code-website-sidemenu button.closeButton,[data-is="code-website-sidemenu"] button.closeButton{ color: red; width: 40px; text-align: right; display: block; background-color: transparent; border: none; font-size: 40px; margin-left: auto; margin-right: 30px; }',
+  'cs2-sidemenu,[data-is="cs2-sidemenu"]{ height: 100%; width: 250px; background-color: #F5F5F5; display: block; position: fixed; top: 0px; right: 0px; } cs2-sidemenu a.sidelink,[data-is="cs2-sidemenu"] a.sidelink{ display: block; background-color: #009688; padding: 10px; line-height: 30px; font-size: 20px; color: white; text-decoration: none; border: 1px solid white; } cs2-sidemenu a.sidelink:hover,[data-is="cs2-sidemenu"] a.sidelink:hover{ background-color: #4DB6AC; } cs2-sidemenu button.closeButton,[data-is="cs2-sidemenu"] button.closeButton{ color: red; width: 40px; text-align: right; display: block; background-color: transparent; border: none; font-size: 40px; margin-left: auto; margin-right: 30px; }',
   '', function(opts) {
 		var self= this;
 		self.hideMenu = function (evt) {
@@ -3741,16 +3741,16 @@ riot.tag2('code-website-sidemenu',
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__subpage_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__subpage_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__code_website_teacher_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cs2_teacher_tag__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cs2_teacher_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__cs2_teacher_tag__);
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-overview.tag
+    //src: E:/Documents/GitHub/code-website/tags/cs2-overview.tag
 
 
-riot.tag2('code-website-overview',
-  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> LOREM IPSUM is a group that provides programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <code-website-teacher each="{teacher, index in window.teachers}" teacher="{teacher}" riot-style="{\'background-color: hsl(\'+((index / window.teachers.length) * 360)+\',46%,87%)\'}"></code-website-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
-  'code-website-overview,[data-is="code-website-overview"]{ display: block; padding: 10px; }',
+riot.tag2('cs2-overview',
+  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> CS<sup>2</sup> (Chinese School Computer Scientists) is a group that provides volunteer programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> Founded in 2016, our mission is to provide the SCCS students with an entertaining introduction to programming. </p> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a complete list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <cs2-teacher each="{teacher, index in window.teachers}" teacher="{teacher}" riot-style="{\'background-color: hsl(\'+((index / window.teachers.length) * 360)+\',46%,87%)\'}"></cs2-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
+  'cs2-overview,[data-is="cs2-overview"]{ display: block; padding: 10px; }',
   '', function(opts) {
 });
     
@@ -4343,10 +4343,10 @@ module.exports = function (css) {
 
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-teacher.tag
-riot.tag2('code-website-teacher',
-  '<div class="nameAndImg"> <div class="mask"> <img class="teacherImg" riot-src="{opts.teacher.img}"> </div> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
-  'code-website-teacher,[data-is="code-website-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ display: block; position: relative; width: 150px; } code-website-teacher div.mask,[data-is="code-website-teacher"] div.mask{ height: 100px; width: 100px; background-color: red; overflow: hidden; margin: 0 auto; } code-website-teacher img.teacherImg,[data-is="code-website-teacher"] img.teacherImg{ height: auto; width: 100px; display: block; } code-website-teacher h3.teacherName,[data-is="code-website-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ margin-right: 20px; float: left; } code-website-teacher p.teacherBio,[data-is="code-website-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { code-website-teacher div.nameAndImg,[data-is="code-website-teacher"] div.nameAndImg{ margin-left: auto; margin-right: auto; } }',
+    //src: E:/Documents/GitHub/code-website/tags/cs2-teacher.tag
+riot.tag2('cs2-teacher',
+  '<div class="nameAndImg"> <div class="mask"> <img class="teacherImg" riot-src="{opts.teacher.img}" alt="{\'An picture of \'+opts.teacher.name}"> </div> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
+  'cs2-teacher,[data-is="cs2-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } cs2-teacher div.nameAndImg,[data-is="cs2-teacher"] div.nameAndImg{ display: block; position: relative; width: 150px; } cs2-teacher div.mask,[data-is="cs2-teacher"] div.mask{ height: 100px; width: 100px; overflow: hidden; margin: 0 auto; } cs2-teacher img.teacherImg,[data-is="cs2-teacher"] img.teacherImg{ height: auto; width: 100px; display: block; } cs2-teacher h3.teacherName,[data-is="cs2-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { cs2-teacher div.nameAndImg,[data-is="cs2-teacher"] div.nameAndImg{ margin-right: 20px; float: left; } cs2-teacher p.teacherBio,[data-is="cs2-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { cs2-teacher div.nameAndImg,[data-is="cs2-teacher"] div.nameAndImg{ margin-left: auto; margin-right: auto; } }',
   '', function(opts) {
 });
     
@@ -4357,15 +4357,15 @@ riot.tag2('code-website-teacher',
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_lesson_tag__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__code_website_lesson_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__code_website_lesson_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cs2_lesson_tag__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cs2_lesson_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__cs2_lesson_tag__);
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-lessons.tag
+    //src: E:/Documents/GitHub/code-website/tags/cs2-lessons.tag
 
-riot.tag2('code-website-lessons',
-  '<h1 class="subpageheader"> Lessons </h1> <p> These are some of the lessons we have taught at the SCCS. We don\'t have a set lesson plan, but adjust the lessons to better fit the kids who are present. </p> <code-website-lesson each="{lesson, index in window.lessons}" lesson="{lesson}" riot-style="{\'background-color: hsl(\'+((index / window.lessons.length) * 360)+\',46%,87%)\'}"> </code-website-lesson>',
-  'code-website-lessons,[data-is="code-website-lessons"]{ display: block; padding: 10px; }',
+riot.tag2('cs2-lessons',
+  '<h1 class="subpageheader"> Lessons </h1> <p> These are some of the lessons we have taught at the SCCS. We don\'t have a set lesson plan, but adjust the lessons to better fit the kids who are present. </p> <cs2-lesson each="{lesson, index in window.lessons}" lesson="{lesson}" riot-style="{\'background-color: hsl(\'+((index / window.lessons.length) * 360)+\',46%,87%)\'}"> </cs2-lesson>',
+  'cs2-lessons,[data-is="cs2-lessons"]{ display: block; padding: 10px; }',
   '', function(opts) {
 });
     
@@ -4377,10 +4377,10 @@ riot.tag2('code-website-lessons',
 
 
     var riot = __webpack_require__(0)
-    //src: E:/Documents/GitHub/code-website/tags/code-website-lesson.tag
-riot.tag2('code-website-lesson',
+    //src: E:/Documents/GitHub/code-website/tags/cs2-lesson.tag
+riot.tag2('cs2-lesson',
   '<h3 class="lessonName">{opts.lesson.name}</h3> <p>{opts.lesson.desc}</p> <hr> <p>Lesson Materials:</p> <virtual each="{link, index in opts.lesson.links}"> <p><a class="lessonLink" href="{link.href}">{link.text}</a>- {link.desc}</p> </virtual>',
-  'code-website-lesson,[data-is="code-website-lesson"]{ background-color: white; display: block; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } code-website-lesson h3.lessonName,[data-is="code-website-lesson"] h3.lessonName{ font-size: 30px; margin-top: 5px; margin-bottom: 5px; } code-website-lesson a.lessonLink,[data-is="code-website-lesson"] a.lessonLink{ display: inline-block; padding: 5px line-height: 30px; font-size: 20px; text-decoration: none; margin-bottom: 5px; width: auto; } code-website-lesson a.lessonLink:hover,[data-is="code-website-lesson"] a.lessonLink:hover{ text-decoration: underline; }',
+  'cs2-lesson,[data-is="cs2-lesson"]{ background-color: white; display: block; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } cs2-lesson h3.lessonName,[data-is="cs2-lesson"] h3.lessonName{ font-size: 30px; margin-top: 5px; margin-bottom: 5px; } cs2-lesson a.lessonLink,[data-is="cs2-lesson"] a.lessonLink{ display: inline-block; padding: 5px line-height: 30px; font-size: 20px; text-decoration: none; margin-bottom: 5px; width: auto; } cs2-lesson a.lessonLink:hover,[data-is="cs2-lesson"] a.lessonLink:hover{ text-decoration: underline; }',
   '', function(opts) {
 });
     

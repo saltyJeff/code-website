@@ -1,4 +1,4 @@
-<code-website-header>
+<cs2-header>
 	<style>
 		:scope {
 			width: 100%;
@@ -67,7 +67,7 @@
 		}
 	</style>
 	<a class="titlebar" href="#overview">
-		Code Website
+		Chinese School CS
 	</a>
 	<div class="sitenavbar">
 		<a class="navlink" href="#overview">Overview</a>
@@ -79,7 +79,7 @@
 	</button>
 	<script>
 		this.toggleMenu = function(evt) {
-			document.querySelector('code-website-sidemenu').style.display = "block";
+			document.querySelector('cs2-sidemenu').style.display = "block";
 		}
 	</script>
-</code-website-header>
+</cs2-header>

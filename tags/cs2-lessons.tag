@@ -1,4 +1,4 @@
-<code-website-lessons>
+<cs2-lessons>
 	<style>
 		:scope {
 			display: block;
@@ -12,13 +12,13 @@
 		These are some of the lessons we have taught at the SCCS.
 		We don't have a set lesson plan, but adjust the lessons to better fit the kids who are present.
 	</p>
-	<code-website-lesson
+	<cs2-lesson
 		each={ lesson, index in window.lessons }
 		lesson={ lesson }
 		style={ 'background-color: hsl('+((index / window.lessons.length) * 360)+',46%,87%)' }
 		>
-	</code-website-lesson>
+	</cs2-lesson>
 	<script>
-		import './code-website-lesson.tag'
+		import './cs2-lesson.tag'
 	</script>
-</code-website-lessons>
+</cs2-lessons>

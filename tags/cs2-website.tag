@@ -1,4 +1,4 @@
-<code-website>
+<cs2-website>
 	<style>
 		:scope {
 			height: 100%;
@@ -11,14 +11,14 @@
 			overflow-y: auto;
 			display: block;
 		}
-		code-website-sidemenu {
+		cs2-sidemenu {
 			display: none;
 		}
 	</style>
-	<code-website-header></code-website-header>
+	<cs2-header></cs2-header>
 	<router ref="router">
-		<route path="overview"><code-website-overview></code-website-overview></route>
-		<route path="lessons"><code-website-lessons></code-website-lessons></route>
+		<route path="overview"><cs2-overview></cs2-overview></route>
+		<route path="lessons"><cs2-lessons></cs2-lessons></route>
 		<route path="contact">
 			<div style="overflow: hidden; height: 100%; width: 100%;">
 				<iframe 
@@ -31,12 +31,12 @@
 			</div>
 		</route>
 	</router>
-	<code-website-sidemenu></code-website-sidemenu>
+	<cs2-sidemenu></cs2-sidemenu>
 	<script>
-		import './code-website-header.tag';
-		import './code-website-sidemenu.tag';
-		import './code-website-overview.tag';
-		import './code-website-lessons.tag';
+		import './cs2-header.tag';
+		import './cs2-sidemenu.tag';
+		import './cs2-overview.tag';
+		import './cs2-lessons.tag';
 
 		var self = this;
 		window.onresize = flexPolyfillRouter;
@@ -46,4 +46,4 @@
 		}
 		self.on('mount', flexPolyfillRouter);
 	</script>
-</code-website>
+</cs2-website>

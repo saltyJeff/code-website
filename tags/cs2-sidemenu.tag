@@ -1,4 +1,4 @@
-<code-website-sidemenu>
+<cs2-sidemenu>
 	<style>
 		:scope {
 			height: 100%;
@@ -44,4 +44,4 @@
 			self.root.style.display = "none";
 		}
 	</script>
-</code-website-sidemenu>
+</cs2-sidemenu>
