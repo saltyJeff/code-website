@@ -1,14 +1,15 @@
 h1.subpageheader {
-	font-size: 35px;
+	font-size: 25pt;
 	margin: 0px;
 	padding: 20px 0px;
 	border-bottom: 2px solid #D3D3D3;
 }
 h2.subtitle {
-	font-size: 20px;
+	font-size: 20pt;
 }
 p {
-	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 14pt;
 }
 a {
 	white-space: wrap;

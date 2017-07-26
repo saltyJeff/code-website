@@ -3801,7 +3801,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 35px;\r\n\tmargin: 0px;\r\n\tpadding: 20px 0px;\r\n\tborder-bottom: 2px solid #D3D3D3;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20px;\r\n}\r\np {\r\n\tfont-size: 16px;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n\ttext-decoration: none;\r\n\tcolor: #478DFF;\r\n}\r\na:hover {\r\n\ttext-decoration: underline;\r\n}\r\na:visited {\r\n\tcolor: #4527A5;\r\n}", ""]);
+exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 25pt;\r\n\tmargin: 0px;\r\n\tpadding: 20px 0px;\r\n\tborder-bottom: 2px solid #D3D3D3;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20pt;\r\n}\r\np {\r\n\tfont-family: 'Roboto Slab', serif;\r\n\tfont-size: 14pt;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n\ttext-decoration: none;\r\n\tcolor: #478DFF;\r\n}\r\na:hover {\r\n\ttext-decoration: underline;\r\n}\r\na:visited {\r\n\tcolor: #4527A5;\r\n}", ""]);
 
 // exports
 
