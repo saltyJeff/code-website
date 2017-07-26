@@ -3618,13 +3618,22 @@ module.exports = [
 	{
 		img: "./img/eugene.jpg",
 		name: "Eugene Hwang",
-		bio: "I am a high school Junior who is currently learning the touches of making a website."
+		bio: "I am a high school junior who is currently learning the touches of making a website."
 	},
 	{
 		img: "./img/jefferson.jpg",
 		name: "Jefferson Lee",
 		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
+		"I also decided to learn MicroChip PIC18 assembly. "+
 		"Use the Contact Us page if you want to talk to me about designing your own site."
+	},
+	{
+		img: "./img/patrick.jpg",
+		name: "Patrick Liu",
+		bio: "I am a high school junior (and founder of this group) who is dedicated to "+
+		"spreading the passion of coding through early exposure to the youth of the community. "+
+		"I dabble in several languages, but find Java and C++ to be the most comfortable ones. "+
+		"I enjoy the applications of programming in electronics, and have developed several projects using Arduinos and mobile devices. "
 	}
 ];
 
@@ -3754,7 +3763,7 @@ riot.tag2('cs2-sidemenu',
 
 
 riot.tag2('cs2-overview',
-  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> CS<sup>2</sup> (Chinese School Computer Scientists) is a group that provides volunteer programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> Founded in 2016, our mission is to provide the SCCS students with an entertaining introduction to programming. </p> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a complete list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <cs2-teacher each="{teacher, index in window.teachers}" teacher="{teacher}" riot-style="{\'background-color: hsl(\'+((index / window.teachers.length) * 360)+\',46%,87%)\'}"></cs2-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
+  '<h1 class="subpageheader">Overview</h1> <h2 class="subtitle"> CS<sup>2</sup> (Chinese School Computer Scientists) is a group that provides volunteer programming lessons at the <a href="http://www.sccca.org/">South Coast Chinese School</a> </h2> <p> Founded in the summer of 2016, our mission is to provide the SCCS students with an entertaining introduction to programming. </p> <p> We provide programming tutorials in a variety of languages for kids in 2nd to 6th grade in the summer. For a complete list of lessons, please visit the <a href="#lessons">Lessons page</a> </p> <h2>Teachers</h2> <cs2-teacher each="{teacher, index in window.teachers}" teacher="{teacher}" riot-style="{\'background-color: hsl(\'+((index / window.teachers.length) * 360)+\',46%,87%)\'}"></cs2-teacher> <p> Interested in joining our team? Visit the <a href="#contact">Contact Us page</a> </p> <p> This site was made with <span style="color: red; font-size: 30px">&#9829;</span> by <a href="https://github.com/saltyJeff">Jefferson Lee</a> using Riot.js and Webpack </p>',
   'cs2-overview,[data-is="cs2-overview"]{ display: block; padding: 10px; }',
   '', function(opts) {
 });
@@ -4350,7 +4359,7 @@ module.exports = function (css) {
     var riot = __webpack_require__(0)
     //src: E:/Documents/GitHub/code-website/tags/cs2-teacher.tag
 riot.tag2('cs2-teacher',
-  '<div class="nameAndImg"> <div class="mask"> <img class="teacherImg" riot-src="{opts.teacher.img}" alt="{\'An picture of \'+opts.teacher.name}"> </div> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
+  '<div class="nameAndImg"> <div class="mask"> <img class="teacherImg" riot-src="{opts.teacher.img}" alt="{\'A picture of \'+opts.teacher.name}"> </div> <h3 class="teacherName">{opts.teacher.name}</h3> </div> <p class="teacherBio">{opts.teacher.bio}</p>',
   'cs2-teacher,[data-is="cs2-teacher"]{ background-color: white; display: block; overflow: hidden; padding: 10px; margin-bottom: 10px; box-shadow: 8px 8px rgba(0,0,0,0.6); } cs2-teacher div.nameAndImg,[data-is="cs2-teacher"] div.nameAndImg{ display: block; position: relative; width: 150px; } cs2-teacher div.mask,[data-is="cs2-teacher"] div.mask{ height: 100px; width: 100px; overflow: hidden; margin: 0 auto; } cs2-teacher img.teacherImg,[data-is="cs2-teacher"] img.teacherImg{ height: auto; width: 100px; display: block; } cs2-teacher h3.teacherName,[data-is="cs2-teacher"] h3.teacherName{ font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 5px; } @media (min-width:800px) { cs2-teacher div.nameAndImg,[data-is="cs2-teacher"] div.nameAndImg{ margin-right: 20px; float: left; } cs2-teacher p.teacherBio,[data-is="cs2-teacher"] p.teacherBio{ display: block; } } @media (max-width:799px) { cs2-teacher div.nameAndImg,[data-is="cs2-teacher"] div.nameAndImg{ margin-left: auto; margin-right: auto; } }',
   '', function(opts) {
 });

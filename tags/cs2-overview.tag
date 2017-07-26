@@ -11,7 +11,7 @@
 		<a href="http://www.sccca.org/">South Coast Chinese School</a>
 	</h2>
 	<p>
-		Founded in 2016, our mission is to provide the SCCS students with an entertaining introduction
+		Founded in the summer of 2016, our mission is to provide the SCCS students with an entertaining introduction
 		to programming.
 	</p>
 	<p>

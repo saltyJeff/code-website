@@ -48,7 +48,7 @@
 	</style>
 	<div class="nameAndImg">
 		<div class="mask">
-			<img class="teacherImg" src={ opts.teacher.img } alt={ 'An picture of '+opts.teacher.name }/>
+			<img class="teacherImg" src={ opts.teacher.img } alt={ 'A picture of '+opts.teacher.name }/>
 		</div>
 		<h3 class="teacherName">{opts.teacher.name}</h3>
 	</div>
