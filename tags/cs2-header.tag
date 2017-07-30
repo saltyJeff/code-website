@@ -34,6 +34,7 @@
 				padding: 10px 30px 6px 30px;
 				font-size: 15px;
 				line-height: 25px;
+				border: 1px solid white;
 			}
 			a.navlink:hover {
 				background-color: #7986CB;

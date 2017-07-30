@@ -3623,7 +3623,8 @@ module.exports = [
 	{
 		img: "./img/jefferson.jpg",
 		name: "Jefferson Lee",
-		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. I also do front/backend development with many libraries + Node.js and Mongo. "+
+		bio: "I'm a high school senior and a self taught programmer who dabbles in Java and C#/Unity3d. "+
+		"I also do front/backend development with many libraries + Node.js and Mongo. "+
 		"I also decided to learn MicroChip PIC18 assembly. "+
 		"Use the Contact Us page if you want to talk to me about designing your own site."
 	},
@@ -3634,6 +3635,12 @@ module.exports = [
 		"spreading the passion of coding through early exposure to the youth of the community. "+
 		"I dabble in several languages, but find Java and C++ to be the most comfortable ones. "+
 		"I enjoy the applications of programming in electronics, and have developed several projects using Arduinos and mobile devices. "
+	},
+	{
+		img: "./img/jonathan.jpg",
+		name: "Jonathan Park",
+		bio: "I am a high school sophomore who enjoys being with kids, with my goal, to teach children how to program. "+
+		"I am proficient in the following computer languages: Java, Javascript, C, C++ and am familiar with HTML and CSS. "
 	}
 ];
 
@@ -3720,7 +3727,7 @@ riot.tag2('cs2-website',
     //src: E:/Documents/GitHub/code-website/tags/cs2-header.tag
 riot.tag2('cs2-header',
   '<a class="titlebar" href="#overview"> Chinese School CS </a> <div class="sitenavbar"> <a class="navlink" href="#overview">Overview</a> <a class="navlink" href="#lessons">Lessons</a> <a class="navlink" href="#contact">Contact Us</a> </div> <button class="hamburger" onclick="{toggleMenu}"> &#9776; </button>',
-  'cs2-header,[data-is="cs2-header"]{ width: 100%; height: 65px; background-color: #3F51B5; display: block; position: relative; color: white; } cs2-header a.titlebar,[data-is="cs2-header"] a.titlebar{ margin: 0px; font-size: 20px; position: absolute; left: 20px; top: 20px; text-decoration: none; color: white; } @media (min-width:800px) { cs2-header div.sitenavbar,[data-is="cs2-header"] div.sitenavbar{ display: inline-block; position: absolute; right: 30px; top: 13px; height: 100%; } cs2-header a.navlink,[data-is="cs2-header"] a.navlink{ display: inline-block; margin-left: 30px; color: white; text-decoration: none; height: 30px; padding: 10px 30px 6px 30px; font-size: 15px; line-height: 25px; } cs2-header a.navlink:hover,[data-is="cs2-header"] a.navlink:hover{ background-color: #7986CB; } cs2-header button.hamburger,[data-is="cs2-header"] button.hamburger{ display: none; } cs2-header div.sidemenu,[data-is="cs2-header"] div.sidemenu{ display: none; } } @media (max-width:799px) { cs2-header div.sitenavbar,[data-is="cs2-header"] div.sitenavbar{ display: none; } cs2-header button.hamburger,[data-is="cs2-header"] button.hamburger{ display: inline-block; position: absolute; right: 20px; height: 65px; width: 65px; top: 0px; border: none; background-color: transparent; font-size: 30px; color: white; } cs2-header button.hamburger:active,[data-is="cs2-header"] button.hamburger:active{ background-color: #3849A2; } }',
+  'cs2-header,[data-is="cs2-header"]{ width: 100%; height: 65px; background-color: #3F51B5; display: block; position: relative; color: white; } cs2-header a.titlebar,[data-is="cs2-header"] a.titlebar{ margin: 0px; font-size: 20px; position: absolute; left: 20px; top: 20px; text-decoration: none; color: white; } @media (min-width:800px) { cs2-header div.sitenavbar,[data-is="cs2-header"] div.sitenavbar{ display: inline-block; position: absolute; right: 30px; top: 13px; height: 100%; } cs2-header a.navlink,[data-is="cs2-header"] a.navlink{ display: inline-block; margin-left: 30px; color: white; text-decoration: none; height: 30px; padding: 10px 30px 6px 30px; font-size: 15px; line-height: 25px; border: 1px solid white; } cs2-header a.navlink:hover,[data-is="cs2-header"] a.navlink:hover{ background-color: #7986CB; } cs2-header button.hamburger,[data-is="cs2-header"] button.hamburger{ display: none; } cs2-header div.sidemenu,[data-is="cs2-header"] div.sidemenu{ display: none; } } @media (max-width:799px) { cs2-header div.sitenavbar,[data-is="cs2-header"] div.sitenavbar{ display: none; } cs2-header button.hamburger,[data-is="cs2-header"] button.hamburger{ display: inline-block; position: absolute; right: 20px; height: 65px; width: 65px; top: 0px; border: none; background-color: transparent; font-size: 30px; color: white; } cs2-header button.hamburger:active,[data-is="cs2-header"] button.hamburger:active{ background-color: #3849A2; } }',
   '', function(opts) {
 		this.toggleMenu = function(evt) {
 			document.querySelector('cs2-sidemenu').style.display = "block";
@@ -3810,7 +3817,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 25pt;\r\n\tmargin: 0px;\r\n\tpadding: 20px 0px;\r\n\tborder-bottom: 2px solid #D3D3D3;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20pt;\r\n}\r\np {\r\n\tfont-family: 'Roboto Slab', serif;\r\n\tfont-size: 14pt;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n\ttext-decoration: none;\r\n\tcolor: #478DFF;\r\n}\r\na:hover {\r\n\ttext-decoration: underline;\r\n}\r\na:visited {\r\n\tcolor: #4527A5;\r\n}", ""]);
+exports.push([module.i, "h1.subpageheader {\r\n\tfont-size: 25pt;\r\n\tmargin: 0px;\r\n\tpadding-top: 0px;\r\n\tpadding: 20px 0px; \r\n\tborder-bottom: 2px solid #D3D3D3;\r\n}\r\nh2.subtitle {\r\n\tfont-size: 20pt;\r\n}\r\np {\r\n\tfont-family: 'Roboto Slab', serif;\r\n\tfont-size: 14pt;\r\n}\r\na {\r\n\twhite-space: wrap;\r\n\ttext-decoration: none;\r\n\tcolor: #478DFF;\r\n}\r\na:hover {\r\n\ttext-decoration: underline;\r\n}\r\na:visited {\r\n\tcolor: #4527A5;\r\n}", ""]);
 
 // exports
 
