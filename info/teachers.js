@@ -2,7 +2,8 @@ module.exports = [
 	{
 		img: "./img/eugene.jpg",
 		name: "Eugene Hwang",
-		bio: "I am a high school junior who is currently learning the touches of making a website."
+		bio: "I am a high school Junior who is currently learning the touches of making a website. "+
+		"I dabble mostly in Javascript and Java. I am a beginner to computer science and coding, but hope to grow as a student and a mentor. "
 	},
 	{
 		img: "./img/jefferson.jpg",
